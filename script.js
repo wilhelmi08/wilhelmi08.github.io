@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Scroll to the target section
                 targetSection.scrollIntoView({ behavior: 'smooth' });
 
-                // Remove glow class after 10 seconds
+                // Remove glow class after 3 seconds
                 setTimeout(function() {
                     targetSection.classList.remove('glow');
-                }, 3000); // 10000 milliseconds = 10 seconds
+                }, 3000); // 3000 milliseconds = 3 seconds
             }
         });
     });
