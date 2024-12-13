@@ -19,6 +19,13 @@ header img {
     height: 15vh;
     margin-top: 2vh;
     object-fit: cover;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.2);
+    width: 20vh;
+    height: 20vh;
 }
 
 nav {
@@ -191,20 +198,20 @@ footer {
     text-decoration: none;
 }
 
-a:link { 
-    text-decoration: none; 
-} 
+a:link {
+    text-decoration: none;
+}
 
-a:visited { 
-    text-decoration: none; 
-} 
+a:visited {
+    text-decoration: none;
+}
 
-a:hover { 
-    text-decoration: none; 
-} 
+a:hover {
+    text-decoration: none;
+}
 
-a:active { 
-    text-decoration: none; 
+a:active {
+    text-decoration: none;
 }
 
 .glow {
