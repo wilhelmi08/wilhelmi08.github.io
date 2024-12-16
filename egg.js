@@ -67,3 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+const img = document.getElementById('profile-image');
+let theRapture = 0;
+
+img.addEventListener('mousedown', () => {
+    if (theRapture != 5) {
+        img.src = 'bin/images/egg.webp';
+        theRapture += 1
+    }
+    if (theRapture >= 5) {
+        img.src = 'bin/images/räkegg.jpg';
+    }
+});
