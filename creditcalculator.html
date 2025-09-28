@@ -8,39 +8,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <label class="switch">
+            <input type="checkbox" id="language-toggle">
+            <span class="slider">
+                <span class="flag-left">🇺🇸</span>
+                <span class="flag-right">🇫🇮</span>
+            </span>
+        </label>
+    </div>
+
     <header>
         <h1>CreditCalculator</h1>
-        <p>A mod I made for Lethal Company.</p>
+        <p data-en="A mod I made for Lethal Company." data-fi="Lethal Company -peliin tekemäni modi.">A mod I made for Lethal Company.</p>
         <img id="project-image" src="bin/images/CreditCalculator.png" class="calc" alt="TV GAME">
     </header>
 
     <nav>
         <ul>
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#features">Usage</a></li>
-            <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#overview" data-en="Overview" data-fi="Yleiskatsaus">Overview</a></li>
+            <li><a href="#features" data-en="Usage" data-fi="Käyttö">Usage</a></li>
+            <li><a href="#technologies" data-en="Technologies" data-fi="Teknologiat">Technologies</a></li>
+            <li><a href="#contact" data-en="Contact" data-fi="Yhteystiedot">Contact</a></li>
         </ul>
     </nav>
 
     <div class="nav-placeholder"></div>
 
     <section id="overview">
-        <h2>Overview</h2>
-        <p>I made this mod, so Lethal Company players can calculate precisely how much scrap they need to sell in the game.</p>
+        <h2 data-en="Overview" data-fi="Yleiskatsaus">Overview</h2>
+        <p data-en="I made this mod, so Lethal Company players can calculate precisely how much scrap they need to sell in the game." data-fi="Tein tämän modin, jotta Lethal Company -pelaajat voivat laskea tarkasti, kuinka paljon romua heidän pitää myydä pelissä.">I made this mod, so Lethal Company players can calculate precisely how much scrap they need to sell in the game.</p>
     </section>
 
     <section id="features">
-        <h2>Usage</h2>
-            <p>You can use the command 'calc [wanted money]' in the in-game terminal to calculate how much scrap you need to sell achieve the value of money you want.
+        <h2 data-en="Usage" data-fi="Käyttö">Usage</h2>
+            <p data-en="You can use the command 'calc [wanted money]' in the in-game terminal to calculate how much scrap you need to sell achieve the value of money you want." data-fi="Voit käyttää komentoa 'calc [haluttu raha]' pelin terminaalissa laskeaksesi, kuinka paljon romua sinun pitää myydä saavuttaaksesi haluamasi rahamäärän.">You can use the command 'calc [wanted money]' in the in-game terminal to calculate how much scrap you need to sell achieve the value of money you want.
                 <p><img class="calculation" src="bin/images/calc.png"></p>
-                You can also use 'calc quota' to subtract the already earned money from your quota, 'calc help' for a list of commands and you can also use expressions in the command, e.g. 'calc 1500+400'.
+                <span data-en="You can also use 'calc quota' to subtract the already earned money from your quota, 'calc help' for a list of commands and you can also use expressions in the command, e.g. 'calc 1500+400'." data-fi="Voit myös käyttää 'calc quota' vähentääksesi jo ansaitun rahan kiintiöstäsi, 'calc help' komentojen luetteloon ja voit myös käyttää lausekkeita komennossa, esim. 'calc 1500+400'.">You can also use 'calc quota' to subtract the already earned money from your quota, 'calc help' for a list of commands and you can also use expressions in the command, e.g. 'calc 1500+400'.</span>
             </p>
     </section>
 
     <section id="technologies">
-        <h2>Technologies</h2>
+        <h2 data-en="Technologies" data-fi="Teknologiat">Technologies</h2>
         <div class="skills">
             <div class="skill-item">
                 <i class="fab fa-cuttlefish"></i>
@@ -50,14 +61,12 @@
     </section>
 
     <footer id="contact">
-        <h2>Contact</h2>
-        <p>Email: <i class="fas fa-envelope copy-icon" data-clipboard-text="s4savi02@students.osao.fi"></i> s4savi02@students.osao.fi</p>
-        <p>Phone: <i class="fas fa-phone copy-icon" data-clipboard-text="0451051551"></i> 0451051551</p>
+        <h2 data-en="Contact" data-fi="Yhteystiedot">Contact</h2>
+        <p><span data-en="Email:" data-fi="Sähköposti:">Email:</span> <i class="fas fa-envelope copy-icon" data-clipboard-text="s4savi02@students.osao.fi"></i> s4savi02@students.osao.fi</p>
         <a class="icon" href="https://github.com/wilhelmi08" target="_blank"><i class="fa-brands fa-github"></i></a>
         <hr class="copyright">
-        <p>&copy; 2024 Viljo Saukko. All rights reserved.</p>
+        <p>&copy; 2025 Viljo Saukko. All rights reserved. <i class="fa-solid fa-egg" id="egg-icon"></i></p>
     </footer>
-
     <script src="tvgame-script.js"></script>
 </body>
 </html>

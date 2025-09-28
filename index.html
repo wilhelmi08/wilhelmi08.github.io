@@ -8,27 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <label class="switch">
+            <input type="checkbox" id="language-toggle">
+            <span class="slider">
+                <span class="flag-left">🇺🇸</span>
+                <span class="flag-right">🇫🇮</span>
+            </span>
+        </label>
+    </div>
+
     <header>
         <h1>Viljo Saukko</h1>
-        <p>Software engineer student</p>
+        <p data-en="Software engineer student" data-fi="Ohjelmistokehittäjäopiskelija">Software engineer student</p>
         <img id="profile-image" src="bin/images/viljo.jpg" alt="Your Photo">
     </header>
     
 
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-en="About Me" data-fi="Tietoja minusta">About Me</a></li>
+            <li><a href="#projects" data-en="Projects" data-fi="Projektit">Projects</a></li>
+            <li><a href="#contact" data-en="Contact" data-fi="Yhteystiedot">Contact</a></li>
         </ul>
     </nav>
 
     <div class="nav-placeholder"></div>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a software engineer student at OSAO Kaukovainio.</p>
-        <h3>Skills</h3>
+        <h2 data-en="About Me" data-fi="Tietoja minusta">About Me</h2>
+        <p data-en="I am a software engineer student at OSAO Kaukovainio." data-fi="Olen ohjelmistokehittäjäopiskelija OSAO Kaukovainiolla.">I am a software engineer student at OSAO Kaukovainio.</p>
+        <h3 data-en="Skills" data-fi="Taidot">Skills</h3>
         <div class="skills">
             <div class="skill-item">
                 <i class="fab fa-python"></i>
@@ -39,13 +50,13 @@
                 <span>C#</span>
             </div>
             <div class="skill-item">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-file-code"></i>
                 <span>GDScript</span>
             </div>
             <div class="skill-item">
                 <div class="skill-icons">
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-css3-alt"></i>
+                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
                     <i class="fab fa-js"></i>
                 </div>
                 <span>HTML / CSS / JavaScript</span>
@@ -54,28 +65,27 @@
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2 data-en="Projects" data-fi="Projektit">Projects</h2>
         <div class="project-grid">
             <a href="tvgame.html" class="project-item">
                 <h2 class="project">TVGAME</h2>
                 <img src="bin/images/tvpeli.png" alt="TVGAME" class="tvpic">
-                <h3 class="project">A school project of about 3 months.</h3>
+                <h3 class="project" data-en="A school project of about 3 months." data-fi="Noin 3 kuukauden kouluprojekti.">A school project of about 3 months.</h3>
             </a>
             <a href="creditcalculator.html" class="project-item">
                 <h2 class="project">CreditCalulator</h2>
                 <img src="bin/images/CreditCalculator.png" alt="CreditCalculator" class="calcpic">
-                <h3 class="project">A mod I made for Lethal Company.</h3>
+                <h3 class="project" data-en="A mod I made for Lethal Company." data-fi="Lethal Company -peliin tekemäni modi.">A mod I made for Lethal Company.</h3>
             </a>
         </div>
     </section>
 
     <footer id="contact">
-        <h2>Contact</h2>
-        <p>Email: <i class="fas fa-envelope copy-icon" data-clipboard-text="s4savi02@students.osao.fi"></i> s4savi02@students.osao.fi</p>
-        <p>Phone: <i class="fas fa-phone copy-icon" data-clipboard-text="0451051551"></i> 0451051551</p>
+        <h2 data-en="Contact" data-fi="Yhteystiedot">Contact</h2>
+        <p><span data-en="Email:" data-fi="Sähköposti:">Email:</span> <i class="fas fa-envelope copy-icon" data-clipboard-text="s4savi02@students.osao.fi"></i> s4savi02@students.osao.fi</p>
         <a class="icon" href="https://github.com/wilhelmi08" target="_blank"><i class="fa-brands fa-github"></i></a>
         <hr class="copyright">
-        <p>&copy; 2024 Viljo Saukko. All rights reserved. <i class="fa-solid fa-egg" id="egg-icon"></i></p>
+        <p>&copy; 2025 Viljo Saukko. All rights reserved. <i class="fa-solid fa-egg" id="egg-icon"></i></p>
     </footer>
 
     <script src="script.js"></script>

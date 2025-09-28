@@ -8,54 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <label class="switch">
+            <input type="checkbox" id="language-toggle">
+            <span class="slider">
+                <span class="flag-left">🇺🇸</span>
+                <span class="flag-right">🇫🇮</span>
+            </span>
+        </label>
+    </div>
+
     <header>
         <h1>TV GAME</h1>
-        <p>A 2D platformer game project made in school.</p>
+        <p data-en="A 2D platformer game project made in school." data-fi="Koulussa tehty 2D-tasohyppelyprojekti.">A 2D platformer game project made in school.</p>
         <img id="project-image" class="tv" src="bin/images/tvpeli.png" alt="TV GAME">
     </header>
 
     <nav>
         <ul>
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#overview" data-en="Overview" data-fi="Yleiskatsaus">Overview</a></li>
+            <li><a href="#features" data-en="Features" data-fi="Ominaisuudet">Features</a></li>
+            <li><a href="#technologies" data-en="Technologies" data-fi="Teknologiat">Technologies</a></li>
+            <li><a href="#contact" data-en="Contact" data-fi="Yhteystiedot">Contact</a></li>
         </ul>
     </nav>
 
     <div class="nav-placeholder"></div>
 
     <section id="overview">
-        <h2>Overview</h2>
-        <p>The game was a project in school, with the purpose of learning the Godot game engine, as well as what 2D game making is like.</p>
+        <h2 data-en="Overview" data-fi="Yleiskatsaus">Overview</h2>
+        <p data-en="The game was a project in school, with the purpose of learning the Godot game engine, as well as what 2D game making is like." data-fi="Peli oli kouluprojekti, jonka tarkoituksena oli oppia Godot-pelimoottoria sekä sitä, millaista 2D-pelien tekeminen on.">The game was a project in school, with the purpose of learning the Godot game engine, as well as what 2D game making is like.</p>
     </section>
 
     <section id="features">
-        <h2>The game</h2>
-            <p>In my game you have to complete stages while taking a dog with you. You can transport the dog by picking it up, but you cannot jump on walls or climb ladders with it ontop, so you have to find other ways around.
+        <h2 data-en="The game" data-fi="Peli">The game</h2>
+            <p data-en="In my game you have to complete stages while taking a dog with you. You can transport the dog by picking it up, but you cannot jump on walls or climb ladders with it ontop, so you have to find other ways around. Currently there's just a tutorial level in my game and no sound." data-fi="Pelissäni sinun pitää suorittaa tasoja ottaen koira mukaasi. Voit kuljettaa koiraa nostamalla sen, mutta et voi hyppiä seinillä tai kiivetä tikkaita sen kanssa, joten sinun täytyy löytää muita reittejä. Tällä hetkellä pelissäni on vain tutorial-taso eikä ääniä.">In my game you have to complete stages while taking a dog with you. You can transport the dog by picking it up, but you cannot jump on walls or climb ladders with it ontop, so you have to find other ways around.
 
                 Currently there's just a tutorial level in my game and no sound.
             </p>
     </section>
 
     <section id="technologies">
-        <h2>Technologies</h2>
+        <h2 data-en="Technologies" data-fi="Teknologiat">Technologies</h2>
         <div class="skills">
             <div class="skill-item">
-                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-file-code"></i>
                 <span>GDScript</span>
             </div>
         </div>
     </section>
 
     <footer id="contact">
-        <h2>Contact</h2>
-        <p>Email: <i class="fas fa-envelope copy-icon" data-clipboard-text="s4savi02@students.osao.fi"></i> s4savi02@students.osao.fi</p>
-        <p>Phone: <i class="fas fa-phone copy-icon" data-clipboard-text="0451051551"></i> 0451051551</p>
+        <h2 data-en="Contact" data-fi="Yhteystiedot">Contact</h2>
+        <p><span data-en="Email:" data-fi="Sähköposti:">Email:</span> <i class="fas fa-envelope copy-icon" data-clipboard-text="s4savi02@students.osao.fi"></i> s4savi02@students.osao.fi</p>
         <a class="icon" href="https://github.com/wilhelmi08" target="_blank"><i class="fa-brands fa-github"></i></a>
         <hr class="copyright">
-        <p>&copy; 2024 Viljo Saukko. All rights reserved.</p>
+        <p>&copy; 2025 Viljo Saukko. All rights reserved. <i class="fa-solid fa-egg" id="egg-icon"></i></p>
     </footer>
 
     <script src="tvgame-script.js"></script>

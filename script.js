@@ -1,3 +1,31 @@
+// Language switching functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const languageToggle = document.getElementById('language-toggle');
+    const currentLang = localStorage.getItem('language') || 'en';
+    
+    // Set initial language and toggle state
+    setLanguage(currentLang);
+    languageToggle.checked = (currentLang === 'fi');
+    
+    languageToggle.addEventListener('change', function() {
+        const lang = this.checked ? 'fi' : 'en';
+        setLanguage(lang);
+        localStorage.setItem('language', lang);
+    });
+    
+    function setLanguage(lang) {
+        const elements = document.querySelectorAll('[data-en][data-fi]');
+        document.documentElement.lang = lang;
+        
+        elements.forEach(element => {
+            const text = element.getAttribute('data-' + lang);
+            if (text) {
+                element.textContent = text;
+            }
+        });
+    }
+});
+
 window.addEventListener('scroll', function() {
     var nav = document.querySelector('nav');
     var placeholder = document.querySelector('.nav-placeholder');
