@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Christmas 3D Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #87CEEB;
+        }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Mountains of Christmas', cursive, sans-serif;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px #000000;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        #score-board {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            color: #ffdd00;
+            font-family: sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px #ff0000;
+            z-index: 10;
+        }
+
+        #crosshair {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            margin-left: -10px;
+            margin-top: -10px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 0 0 5px white;
+            pointer-events: none;
+            z-index: 20;
+        }
+    </style>
+    <!-- Use a nice Christmas-y font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="info">Use WASD or ARROWS to move. Collect the gifts!</div>
+    <div id="score-board">Score: 0</div>
+    <div id="celebration-text"></div>
+
+    <div id="crosshair">+</div>
+    <!-- Load Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
